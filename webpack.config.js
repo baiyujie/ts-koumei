@@ -59,11 +59,11 @@ module.exports = {
             commonjs2: 'noty',
             amd: 'noty'
         },
-        'up-loader': {
+        'koumei-fileup-loader': {
             root: 'Uploader',
-            commonjs: 'up-loader',
-            commonjs2: 'up-loader',
-            amd: 'up-loader'
+            commonjs: 'koumei-fileup-loader',
+            commonjs2: 'koumei-fileup-loader',
+            amd: 'koumei-fileup-loader'
         }
     },
     module: {

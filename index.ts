@@ -6,7 +6,7 @@ import './components/ms-form';
 export { createForm } from './components/ms-form/create-form';
 import './components/ms-input';
 import './components/ms-textarea';
-import './components/ms-select';
+import './components/ms-select'; 
 import './components/ms-upload';
 import './components/ms-datepicker';
 import './components/ms-timepicker';

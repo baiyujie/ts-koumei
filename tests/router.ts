@@ -28,7 +28,7 @@ function applyRouteConfig(config, parentRoute, accPath = '') {
             });
         });
         // TODO 支持嵌套路由
-        //route.children && applyRouteConfig(route.children, route, accPath + route.path);
+        // route.children && applyRouteConfig(route.children, route, accPath + route.path);
     });
 }
 

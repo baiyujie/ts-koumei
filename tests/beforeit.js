@@ -17,4 +17,4 @@ if (avalon.msie === 8) {
     }
 }
 require('es5-shim/es5-sham');
-require('../output/ane.js');
+require('../output/koumei.js');

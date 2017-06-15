@@ -6,7 +6,7 @@ import controlComponent from '../ms-form/ms-control';
 import { emitToFormItem } from '../ms-form/utils';
 import './ms-upload-list';
 import './ms-upload-card';
-import Uploader from 'up-loader';
+import Uploader from 'koumei-fileup-loader';
 
 /**
  * 文件上传组件

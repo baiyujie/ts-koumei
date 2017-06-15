@@ -19,6 +19,10 @@
     "dist/layout.js",
     "dist/layout.css"
   ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/baiyujie/ts-koumei.git"
+  },
   "scripts": {
     "start": "webpack --config webpack.test.config.js",
     "dev": "webpack-dev-server --config webpack.test.config.js",
@@ -37,7 +41,7 @@
     "dom-align": "^1.5.3",
     "moment": "^2.17.1",
     "noty": "^2.4.1",
-    "up-loader": "1.0.0"
+    "koumei-fileup-loader": "1.0.0"
   },
   "devDependencies": {
     "koumei-markdown-loader": "^1.0.0",
