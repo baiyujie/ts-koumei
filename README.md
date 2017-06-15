@@ -20,7 +20,7 @@ import 'koumei';
 console.log(avalon.components);
 ```
 
-组件的具体使用方法参考这个项目 [ms-bus](https://github.com/baiyujie/ts-designer/)，独立完善的组件文档会在近期推出
+组件的具体使用方法参考这个项目 [ts-designer](https://github.com/baiyujie/ts-designer/)，独立完善的组件文档会在近期推出
 
 ## 浏览器支持
 

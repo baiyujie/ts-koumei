@@ -37,7 +37,7 @@
     "dom-align": "^1.5.3",
     "moment": "^2.17.1",
     "noty": "^2.4.1",
-    "up-loader": "0.0.8"
+    "up-loader": "1.0.0"
   },
   "devDependencies": {
     "koumei-markdown-loader": "^1.0.0",
