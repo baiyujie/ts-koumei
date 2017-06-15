@@ -1,0 +1,19 @@
+<div style="overflow: auto">
+    <ul class="koumei-select-dropdown-menu" role="menu">
+        <li class="koumei-select-dropdown-menu-item"
+            :class="[
+                (@selection.some(function(){return arguments[0].value===option.value}) ? 'koumei-select-dropdown-menu-item-selected' : ''),
+                (option.disabled ? 'koumei-select-dropdown-menu-item-disabled' : '')
+            ]"
+            :for="option in @getFilteredOptions()"
+            :click="@handleOptionClick($event, option)"
+            role="menuitem">
+            {{option.label}}
+            <i class="fa fa-check" :visible="@isMultiple"></i>
+        </li>
+        <li class="koumei-select-dropdown-menu-item koumei-select-dropdown-menu-item-disabled"
+            :visible="@getFilteredOptions().length <= 0 && @searchValue && !@loading">无数据</li>
+        <li class="koumei-select-dropdown-menu-item koumei-select-dropdown-menu-item-disabled"
+            :visible="@loading">加载中</li>
+    </ul>
+</div>

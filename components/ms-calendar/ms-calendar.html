@@ -1,0 +1,24 @@
+<div class="koumei-calendar">
+    <div class="row" ms-if="@showHeader">
+        <div class="col-md-2 col-md-offset-4">
+            <ms-select :widget="{value:[@currentYear],options:@currentYearOptions,onChange:@handleYearChange}"></ms-select>
+        </div>
+        <div class="col-md-2">
+            <ms-select :widget="{value:[@currentMonth],options:@monthOptions,onChange:@handleMonthChange}"></ms-select>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="koumei-calendar-column-header" :for="day in @weekdays">{{day}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr :for="week in @table">
+                <td class="koumei-calendar-cell" :class="el.className" :for="el in week">
+                    <div class="koumei-calendar-date" :click="@handleDateClick(el) | stop">{{el.date}}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

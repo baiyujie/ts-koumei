@@ -1,0 +1,16 @@
+<div class="koumei-calendar">
+    <table class="koumei-calendar-year-view">
+        <tbody>
+            <tr :for="（i, row) in @table">
+                <td class="koumei-calendar-cell"
+                    :class="[
+                                (@isSelected(cell) ? 'koumei-calendar-selected-day' : ''),
+                                (@view > 1 && (i + j === 0 || i * j === 6) ? 'koumei-calendar-prev-month-cell' : '')
+                            ]"
+                    :for="(j, cell) in row">
+                    <div class="koumei-calendar-date" :click="@handleCellClick(cell)">{{cell.label}}</div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

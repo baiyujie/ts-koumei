@@ -1,0 +1,21 @@
+<div class="koumei-datepicker" :css="{width:@width}">
+    <i class="fa fa-calendar koumei-datepicker-icon"></i>
+    <i class="fa fa-times-circle koumei-datepicker-clear" :if="@selected.length" :click="@clear"></i>
+    <input type="text"
+        class="form-control koumei-datepicker-input"
+        :click="@handleClick"
+        readonly
+        :attr="{placeholder:@placeholder}"
+        :css="{width:'100%'}"
+        :duplex="selected" />
+    <ms-trigger :widget="{
+        visible: @panelVisible,
+        innerVmId: @panelVmId,
+        innerClass: @panelClass,
+        innerTemplate: @panelTemplate,
+        withInBox: @withInBox,
+        getTarget: @getTarget,
+        onHide: @handlePanelHide
+    }">
+    </ms-trigger>
+</div>
